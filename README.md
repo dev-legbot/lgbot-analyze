@@ -1,6 +1,10 @@
 # サイト解析
 Webサイトの解析を行う
 
+## 実行環境
+Java 1.8+  
+Google Cloud Dataflow(Apache Beam)  
+
 ## インターフェース
 ### 入力
 #### Pub/Subメッセージの構成
