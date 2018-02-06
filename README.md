@@ -13,9 +13,9 @@ Webサイトの解析を行う
 | キー         | 値                              | データ型 |
 | ---          | ---                             | ---     |
 | url          | クローリングで取得したサイトのurl    | 文字列   |
-| headers    | 対象サイト取得時のResponseヘッダ    | リスト   |
-| header[].type    | ヘッダ種別    | 文字列   |
-| header[].value    | ヘッダ値    | 文字列   |
+| headers    | 対象サイト取得時のResponseヘッダ    | リスト   |
+| header[].type    | ヘッダ種別    | 文字列   |
+| header[].value    | ヘッダ値    | 文字列   |
 | body         | 対象サイトのBody要素（HTML）       | 文字列   |
 
 ##### サンプルJSON
