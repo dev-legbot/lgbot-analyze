@@ -7,7 +7,6 @@ public class EnumerateDomsFn extends DoFn<RecievedResult, ParsedResult> {
     @ProcessElement
     public void enumerate(ProcessContext c) throws IOException {
 //        c.element().url;
-        c.
     }
 
 }
