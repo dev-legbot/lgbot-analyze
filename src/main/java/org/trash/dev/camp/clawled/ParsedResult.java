@@ -1,3 +1,5 @@
+package org.trash.dev.camp.clawled;
+
 public class ParsedResult {
 //    public final String url;
 //    public final List<Dom> doms;

@@ -1,6 +1,10 @@
+package org.trash.dev.camp;
+
 import org.apache.beam.sdk.Pipeline;
 import org.apache.beam.sdk.io.gcp.pubsub.PubsubIO;
 import org.apache.beam.sdk.transforms.ParDo;
+import org.trash.dev.camp.clawled.ParseCrawledResultJsonFn;
+import org.trash.dev.camp.enumerate.EnumerateDomsFn;
 
 import java.util.logging.Logger;
 
