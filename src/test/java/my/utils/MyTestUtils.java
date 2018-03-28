@@ -27,7 +27,7 @@ public class MyTestUtils {
      * @return
      */
     public static RecievedMessage createDummy() {
-        return new RecievedMessage.create(DUMMY_URL, DUMMY_HEADERS, DUMMY_BODY);
+        return RecievedMessage.create(DUMMY_URL, DUMMY_HEADERS, DUMMY_BODY);
     }
 
     /**

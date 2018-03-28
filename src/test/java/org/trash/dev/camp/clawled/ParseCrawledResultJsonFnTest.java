@@ -1,5 +1,6 @@
 package org.trash.dev.camp.clawled;
 
+import static org.junit.Assert.*;
 import my.utils.MyTestUtils;
 import org.apache.beam.sdk.io.gcp.pubsub.PubsubMessage;
 import org.apache.beam.sdk.transforms.DoFnTester;
@@ -19,12 +20,20 @@ public class ParseCrawledResultJsonFnTest {
     public void tearDown() throws Exception {
     }
 
+    /**
+     * 単純動作確認
+     * @throws Exception
+     */
     @Test
-    public void parse() throws Exception {
+    public void simplePathTest() throws Exception {
         String recievedJson = MyTestUtils.createDummy().getJsonString();
         PubsubMessage testMessage = MyTestUtils.createPubsubMessage(recievedJson);
         DoFnTester<PubsubMessage, RecievedMessage> tester = DoFnTester.of(new ParseCrawledResultJsonFn());
         List<RecievedMessage> list = tester.processBundle(testMessage);
+
+        assertTrue("あかんやつ", list.isEmpty());
+
+        assertTrue("同一チェック", true);
     }
 
 }
