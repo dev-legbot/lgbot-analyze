@@ -152,7 +152,7 @@ public class RecievedMessage implements Serializable{
         return this.url.equals(otherSide);
     }
 
-    private static class Header {
+    public static class Header {
 
         private final String type;
         private final String value;

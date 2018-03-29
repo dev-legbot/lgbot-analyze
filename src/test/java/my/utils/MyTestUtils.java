@@ -23,14 +23,6 @@ public class MyTestUtils {
     private static final String DUMMY_BODY = "<html><head></head><body>hoge fuga piyo hogera</body></html>";
 
     /**
-     * ダミーのメッセージをつくる
-     * @return
-     */
-    public static RecievedMessage createDummy() {
-        return RecievedMessage.create(DUMMY_URL, DUMMY_HEADERS, DUMMY_BODY);
-    }
-
-    /**
      * PubSubメッセージの生成。
      * @param payload ペイロード文字列
      * @return

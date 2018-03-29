@@ -18,7 +18,9 @@ public class RecievedMessageTest {
         try
         {
             RecievedMessage msg = RecievedMessage.createByJson(DUMMY_JSON);
+            assertEquals("http://xxx.com", msg.url);
 
+//            msg.headers.stream().forEach(header -> header.equals());
         } catch (IOException ioe)
         { // IOException
             fail(ioe.getMessage());
